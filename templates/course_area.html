@@ -1,16 +1,28 @@
-<html>
-  <head>
-    <title>Olin Course Catalog: {{ course_area }}</title>
-    <style type="text/css">
-      td, th { border: 0 !important; }
-    </style>
-  </head>
-  <body>
-    <dl>
-      {% for index, course in courses %}
-        <dt>{{ course.course_number }}: {{ course.course_name }} ({{ course.course_contact }})</dt>
-        <dd>{{ course.course_description }}</dd>
-      {% endfor %}
-    </dl>
-  </body>
-</html>
+<!DOCTYPE html>
+  <html>
+    <head>
+      <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css')}}"> <!-- add CSS style sheet -->
+      <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Karla|Lobster|Pacifico" rel="stylesheet"> <!-- add Google fonts -->
+      <title>Olin Course Catalog: {{ course_area }}</title>
+      <style type="text/css">
+        td, th { border: 0 !important; }
+      </style>
+    </head>
+
+    <body>
+      <div class="transparent">
+      <article id="top">
+      <h1>Olin Course Catalog: {{ area }}</h1>
+      <p>To learn more about any {{ area }} course, click on its name.</p>
+      <dl>
+        {% for index, course in courses %}
+          <dt><b><a href="/courses/{{course.course_number}}">{{ course.course_number }}: {{ course.course_name }}</a> ({{ course.course_contact }})</b></dt>
+          <dd>{{ course.course_description }}</dd>
+          <dd><a href="#top"><div style="font-size:15px;color:#005c99">Back to Top</a></dd>
+          <dd><a href="#bottom"><div style="font-size:15px;color:#005c99">Skip to Bottom</a></dd>
+        {% endfor %}
+      </dl>
+      <article id="bottom">
+      <p><b><a href="/">Return to Home</a></b></p>
+    </body>
+  </html>

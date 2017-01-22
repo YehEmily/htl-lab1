@@ -1,21 +1,30 @@
-<html>
-  <head>
-    <title>Olin Course Catalog</title>
-    <style type="text/css">
-      td, th { border: 0 !important; }
-    </style>
-  </head>
-  <body>
-    <h2>Areas</h2>
-    {% for area in areas | sort %}
-      <ul>
-        <li><a href="/area/{{area}}">{{area}}</a></li>
-      </ul>
-    {% endfor %}
+<!DOCTYPE html>
+  <html>
+    <head>
+      <link rel=stylesheet type=text/css href="static/style.css?q=3233739690"> <!-- add CSS style sheet -->
+      <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Karla|Lobster|Pacifico" rel="stylesheet"> <!-- add Google fonts -->
+      <title>Olin Course Catalog</title>
+      <style type="text/css">
+        td, th { border: 0 !important; }
+      </style>
+    </head>
+    <body>
+      <div class="transparent">
+      <h1>Olin Course Catalog</h1>
 
-    <h2>Contacts</h2>
-    {% for contact in contacts | sort %}
-      {{contact}}
-    {% endfor %}
-  </body>
-</html>
+      <h2>Course Areas</h2>
+      <p>Select a course area below to view all related courses.<br/><br/>
+      {% for area in areas | sort %}
+          <a href="/area/{{area}}">{{area}}</a> &emsp; &emsp; 
+      {% endfor %}
+      </p>
+
+      <h2>Instructors</h2>
+      <p>Select an instructor below to view all their courses.<br/><br/>
+      {% for contact in contacts | sort %}
+        <a href="/instructor/{{contact}}">{{contact}}</a> &emsp; &emsp; 
+      {% endfor %}
+      </p>
+      </div>
+    </body>
+  </html>
