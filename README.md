@@ -49,7 +49,16 @@ could break it with no warning.
 
 ## Contributors
 
-Written by Oliver Steele <oliver.steele@olin.edu>.
+Written by Oliver Steele <oliver.steele@olin.edu> and contributed to by Emily Yeh <emily.yeh@students.olin.edu>.
+
+Contributions made:
+- Added a back link from all other pages to the home page
+- Added a page for each course (accessible from either any instructor page or from any course area page)
+- Added links to skip to the top or bottom of any course area page
+- Added a page that lists all courses that an instructor teaches (accessible from the home page)
+
+Estimated time taken: 
+
 
 
 ## License
