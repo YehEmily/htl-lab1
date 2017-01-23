@@ -52,12 +52,14 @@ could break it with no warning.
 Written by Oliver Steele <oliver.steele@olin.edu> and contributed to by Emily Yeh <emily.yeh@students.olin.edu>.
 
 Contributions made:
-- Added a back link from all other pages to the home page
-- Added a page for each course (accessible from either any instructor page or from any course area page)
-- Added links to skip to the top or bottom of any course area page
-- Added a page that lists all courses that an instructor teaches (accessible from the home page)
+- Made website look better (with background image made with GIMP)
+- Changed instructor names format ('first last' instead of 'last, first')
+- Added 'Return to Home' button to every page
+- Added 'Back to Top' and 'Skip to Bottom' links to /area/... pages
+- Added personal course pages for each course
+- Added pages for instructors that list the courses they teach (with links to these courses)
 
-Estimated time taken: 
+Estimated time taken: 2 hours?
 
 
 
