@@ -13,10 +13,10 @@
       <div class="transparent">
       <h1>Olin Course Catalog</h1>
       <h2>Courses taught by {{ name }}</h2>
-      <p>Click a course title to learn more.</p>
+      <p>Click a <b>course title</b> to learn more.</p>
       <dl>
         {% for index, instructor in instructors %}
-          <p><a href="/courses/{{instructor.course_number}}">{{instructor.course_number}}: {{instructor.course_name}}</a></p>
+          <p><a href="/courses/{{instructor.course_number}}">{{instructor.course_number}}: <i>{{instructor.course_name}}</i></a></p>
           
         {% endfor %}
       </dl>
