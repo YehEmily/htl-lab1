@@ -63,6 +63,8 @@ Estimated time taken: 2 hours?
 
 Screenshot: https://github.com/YehEmily/htl-lab1/blob/master/1.png
 
+Heroku URL: https://htl-lab-yehemily.herokuapp.com/
+
 
 ## License
 
