@@ -13,18 +13,21 @@
       <h1>Olin Course Catalog</h1>
 
       <h2>Course Areas</h2>
-      <p>Select a course area below to view all related courses.<br/><br/>
+      <p>Select a <b>course area</b> below to view all related courses.<br/><br/>
       {% for area in areas | sort %}
           <a href="/area/{{area}}">{{area}}</a> &emsp; &emsp; 
       {% endfor %}
       </p>
 
       <h2>Instructors</h2>
-      <p>Select an instructor below to view all their courses.<br/><br/>
+      <p>Select any <b>instructor(s)</b> below to view their courses.<br/><br/>
       {% for contact in contacts | sort %}
         <a href="/instructor/{{contact}}">{{contact}}</a> &emsp; &emsp; 
       {% endfor %}
       </p>
+      <center><img src="static/olin-logo.png" height="120"/></center>
       </div>
+
+      
     </body>
   </html>
