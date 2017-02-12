@@ -73,7 +73,9 @@ def switch_names_in_set (contacts_set):
 
 if __name__ == '__main__':
 	port = int(os.environ.get('PORT', 5000))
-	host = os.environ.get('host', '')
+	host = os.environ.get('host', '') # Need to set this variable in a terminal
+	# heroku config:set host=0.0.0.0
+	# export host=127.0.0.1 (because setenv doesn't seem to work on my computer)
 	app.run(host=host, debug=True, port=port)
 	# print(int(os.environ.get('HOME')))
 	# app.run(debug=True)
